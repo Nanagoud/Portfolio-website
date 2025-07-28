@@ -1,145 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nanagoud H T | Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      background-color: #0f172a;
-      color: #f1f5f9;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(to right, #3b82f6, #06b6d4);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      transition: background 0.3s ease-in-out;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1s forwards;
-    }
-    section:nth-of-type(2) {
-      animation-delay: 0.3s;
-    }
-    section:nth-of-type(3) {
-      animation-delay: 0.6s;
-    }
-    section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #38bdf8;
-    }
-    ul, p {
-      margin-bottom: 1rem;
-    }
-    .highlight {
-      color: #38bdf8;
-    }
-    a {
-      color: #7dd3fc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #94a3b8;
-    }
-    @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanagoud H T - Software Engineer</title>
+    <link rel="stylesheet" href="public/css/templatemo-glossy-touch.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 </head>
 <body>
-  <header>
-    <h1>Nanagoud H T</h1>
-    <p>Full-Stack Software Engineer | Node.js Expert | Flutter Enthusiast</p>
-  </header>
+    <!-- Animated background elements -->
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
 
-  <section>
-    <h2>✨ About Me</h2>
-    <p>
-      I am a dedicated and detail-oriented Full-Stack Software Engineer with over <span class="highlight">2.5 years</span> of experience. I specialize in <strong>Node.js</strong>, and have worked with technologies like <strong>Flutter</strong>, <strong>MongoDB</strong>, <strong>PostgreSQL</strong>, and cloud storage platforms. Passionate about building scalable software and solving real-world problems.
-    </p>
-  </section>
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+            </div>
+            Nanagoud H T
+        </div>
+        <div class="nav-links">
+            <a href="#" onclick="showPage('home')" class="active">Home</a>
+            <a href="#" onclick="showPage('about')">About</a>
+            <a href="#" onclick="showPage('services')">Projects</a>
+            <a href="#" onclick="showPage('contact')">Contact</a>
+        </div>
+    </nav>
 
-  <section>
-    <h2>💼 Experience</h2>
-    <p><strong>Software Engineer @ Numocity Technologies</strong> (2022 - Present)</p>
-    <ul>
-      <li>Built scalable multi-tenant microservices with Node.js and PostgreSQL</li>
-      <li>Integrated payment systems and file storage SDKs across AWS, Azure & GCP</li>
-      <li>Developed real-time analytics dashboards with CRON-powered APIs</li>
-    </ul>
-  </section>
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="content-wrapper">
+            <div class="container">
+                <section class="hero glass">
+                    <div class="hero-content">
+                        <h1>Software Engineer & Full-Stack Developer</h1>
+                        <p>Highly skilled Software Engineer with 2.5+ years of experience in developing and maintaining software applications across various platforms. Proficient in Node.js, Flutter, MongoDB, Redis, PostgreSQL, and Azure File Storage.</p>
+                        <a href="#" onclick="showPage('about')" class="cta-button">Learn More About Me</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Software Development" />
+                    </div>
+                </section>
 
-  <section>
-    <h2>🚀 Projects</h2>
-    <ul>
-      <li><strong>Multi-Tenant Platform</strong> – SaaS backend with tenant routing (Node.js, BullMQ)</li>
-      <li><strong>Cross-Cloud File Storage SDK</strong> – Unified package for AWS, Azure, GCP</li>
-      <li><strong>Payment API Integration</strong> – Flutter + Node.js with Redis caching</li>
-      <li><strong>IoT Uptime Dashboard</strong> – TimescaleDB with materialized views</li>
-    </ul>
-  </section>
+                <section class="features">
+                    <div class="feature-card glass">
+                        <div class="feature-icon">💻</div>
+                        <h3>Full-Stack Development</h3>
+                        <p>Expert in Node.js, Express.js, Flutter, and modern web technologies with experience in building scalable applications.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🗄️</div>
+                        <h3>Database Management</h3>
+                        <p>Proficient in MongoDB, PostgreSQL, Redis, and SQLite with expertise in database optimization and performance tuning.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">☁️</div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Experience with Azure Functions, Docker, and cloud storage solutions across AWS S3, Azure, and GCP platforms.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
-  <section>
-    <h2>🔧 Skills</h2>
-    <p><strong>Backend:</strong> Node.js, Express.js, REST API, CRON</p>
-    <p><strong>Frontend:</strong> Flutter, HTML, CSS</p>
-    <p><strong>Databases:</strong> PostgreSQL, MongoDB, TimescaleDB, Redis</p>
-    <p><strong>Tools:</strong> Docker, Firebase, BullMQ, Git, Azure Functions</p>
-  </section>
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="content-wrapper">
+            <div class="container">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>About Me</h2>
+                        <p>I'm a highly skilled and detail-oriented Software Engineer and Full-stack developer with 2.5+ years of experience in developing and maintaining software applications across various platforms.</p>
+                        <p>I specialize in working with databases, REST APIs, and web technologies, with particular expertise in Node.js, Flutter, MongoDB, Redis, PostgreSQL, and Azure File Storage. I'm adept at optimizing performance through caching, pagination, and database profiling.</p>
+                        <p>I have successfully implemented multi-tenant architectures and integrated payment gateways. I'm passionate about problem-solving, learning new technologies, and delivering high-quality, scalable software solutions.</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="About Me" />
+                    </div>
+                </section>
 
-  <section>
-    <h2>🏆 Awards</h2>
-    <ul>
-      <li>⭐ Rising Star Award – Numocity Technologies (2023)</li>
-      <li>⚡ Electric Performer Award – Numocity Technologies (2024)</li>
-    </ul>
-  </section>
+                <section class="stats">
+                    <div class="stat-card glass">
+                        <div class="stat-number">2.5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Awards Received</div>
+                    </div>
+                </section>
 
-  <section>
-    <h2>🎓 Education</h2>
-    <p><strong>B.E. in Computer Science</strong>, B.N.M. Institute of Technology – CGPA 8.5</p>
-  </section>
+                <!-- Skills Section -->
+                <section class="team-section">
+                    <h2>Technical Skills</h2>
+                    <div class="team-grid">
+                        <div class="team-member glass">
+                            <div class="team-avatar">🚀</div>
+                            <h3>Backend Development</h3>
+                            <div class="role">Server-Side Technologies</div>
+                            <div class="bio">Node.js, Express.js, REST APIs, Microservices Architecture</div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar">📱</div>
+                            <h3>Mobile Development</h3>
+                            <div class="role">Cross-Platform Apps</div>
+                            <div class="bio">Flutter, Mobile App Development, Cross-platform Solutions</div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar">🗃️</div>
+                            <h3>Database Technologies</h3>
+                            <div class="role">Data Management</div>
+                            <div class="bio">MongoDB, PostgreSQL, Redis, SQLite, TimescaleDB</div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar">🌐</div>
+                            <h3>Web Technologies</h3>
+                            <div class="role">Frontend Development</div>
+                            <div class="bio">HTML5, CSS3, JavaScript, Responsive Design</div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar">☁️</div>
+                            <h3>Cloud & DevOps</h3>
+                            <div class="role">Infrastructure</div>
+                            <div class="bio">Azure Functions, Docker, AWS S3, GCP Buckets</div>
+                        </div>
+                        <div class="team-member glass">
+                            <div class="team-avatar">🔧</div>
+                            <h3>Tools & Testing</h3>
+                            <div class="role">Development Tools</div>
+                            <div class="bio">Git, Jira, Chai-Mocha, Unit Testing, Debugging</div>
+                        </div>
+                    </div>
+                </section>
 
-  <section>
-    <h2>💌 Contact</h2>
-    <p>Email: <a href="mailto:nanagoud007@gmail.com">nanagoud007@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/nanagoud-thabbannavar-aaa265194" target="_blank">@nanagoud-thabbannavar</a></p>
-    <p>GitHub: <a href="https://github.com/Nanagoud007" target="_blank">@Nanagoud007</a></p>
-  </section>
+                <!-- Education & Awards -->
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>Education</h2>
+                        <h3>Bachelor in Engineering (Computer Science and Engineering)</h3>
+                        <p><strong>B.N.M. Institute of Technology</strong></p>
+                        <p>2018 - 2022 | Bengaluru, India</p>
+                        <p><strong>CGPA:</strong> 8.5</p>
+                    </div>
+                    <div class="about-text glass">
+                        <h2>Awards & Recognition</h2>
+                        <h3>Rising Star Award</h3>
+                        <p><strong>Numocity Technologies</strong> - 2024</p>
+                        <h3>Electric Performer Award</h3>
+                        <p><strong>Numocity Technologies</strong> - 2023</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
-  <footer>
-    © 2025 Nanagoud H T | Portfolio built with 💙 using HTML & CSS
-  </footer>
+    <!-- Services/Projects Page -->
+    <div id="services" class="page">
+        <div class="content-wrapper">
+            <div class="container">
+                <section class="services-grid">
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">📊</div>
+                            <h3>Business Metrics Dashboard</h3>
+                        </div>
+                        <p>Developed REST APIs using Node.js in a microservices architecture, leveraging MongoDB and SQL for analytics queries to power the dashboard.</p>
+                        <ul class="service-features">
+                            <li>Node.js microservices architecture</li>
+                            <li>Flutter-based client web app integration</li>
+                            <li>Automated data fetch with CRON jobs</li>
+                            <li>Real-time operational metrics</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">💳</div>
+                            <h3>Payment Gateway Integration</h3>
+                        </div>
+                        <p>Developed comprehensive payment solutions with Node.js and Express for order creation, webhook handling, and payment status tracking.</p>
+                        <ul class="service-features">
+                            <li>REST APIs for payment processing</li>
+                            <li>Flutter mobile app integration</li>
+                            <li>Redis caching for session data</li>
+                            <li>Webhook handling and status tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🏢</div>
+                            <h3>Multi-Tenancy Platform</h3>
+                        </div>
+                        <p>Designed and developed an upfront microservice in Node.js to route and fetch tenant-specific data from various databases.</p>
+                        <ul class="service-features">
+                            <li>Multi-database support (MongoDB, SQL, PostgreSQL)</li>
+                            <li>Tenant-specific data routing</li>
+                            <li>BullMQ for background processing</li>
+                            <li>SaaS platform architecture</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">☁️</div>
+                            <h3>Cross-Cloud File Storage</h3>
+                        </div>
+                        <p>Built a Node.js package for handling file uploads, storage, retrieval, and management across multiple cloud platforms.</p>
+                        <ul class="service-features">
+                            <li>AWS S3, Azure File Storage, GCP Buckets</li>
+                            <li>Reduced server load and resource consumption</li>
+                            <li>MongoDB metadata tracking</li>
+                            <li>Eliminated code duplication</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🌐</div>
+                            <h3>Multi-Language Notifications</h3>
+                        </div>
+                        <p>Developed a central Node.js notification package to send multilingual notifications, emails, and automated responses.</p>
+                        <ul class="service-features">
+                            <li>Multilingual notification support</li>
+                            <li>Email and automated responses</li>
+                            <li>Improved service inclusivity</li>
+                            <li>Easy microservices integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">📡</div>
+                            <h3>IoT Chargepoint Platform</h3>
+                        </div>
+                        <p>Implemented TimescaleDB on PostgreSQL with Node.js to collect IoT chargepoint logs and serve consolidated uptime data.</p>
+                        <ul class="service-features">
+                            <li>TimescaleDB for time-series data</li>
+                            <li>Real-time data ingestion</li>
+                            <li>SQLite for processing optimization</li>
+                            <li>Materialized views for aggregation</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form glass">
+                        <h2>Get In Touch</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info glass">
+                        <h2>Contact Information</h2>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <p>nanagoud007@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📱</div>
+                            <div class="contact-item-text">
+                                <h4>Phone</h4>
+                                <p>+91 7483282447</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div class="contact-item-text">
+                                <h4>Location</h4>
+                                <p>Bengaluru, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">💼</div>
+                            <div class="contact-item-text">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/nanagoud-thabb</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🏢</div>
+                            <div class="contact-item-text">
+                                <h4>Current Position</h4>
+                                <p>Software Engineer at Numocity Technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map-section">
+                    <div class="contact-map glass">
+                        <h2>Professional Experience</h2>
+                        <div class="map-container">
+                            <div class="map-placeholder">
+                                <div class="map-placeholder-icon">🏢</div>
+                                <div class="address">Software Engineer at Numocity Technologies</div>
+                                <p>05/2022 - Present | Bengaluru, India</p>
+                                <p>Developing scalable software solutions using modern technologies</p>
+                                <p>Working on microservices, payment gateways, and multi-tenant platforms</p>
+                                <div class="integration-note">
+                                    Specialized in Node.js, Flutter, MongoDB, and cloud technologies
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="glass">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" onclick="showPage('home')">Home</a>
+                <a href="#" onclick="showPage('about')">About</a>
+                <a href="#" onclick="showPage('services')">Projects</a>
+                <a href="#" onclick="showPage('contact')">Contact</a>
+                <a href="mailto:nanagoud007@gmail.com">Email</a>
+                <a href="https://linkedin.com/nanagoud-thabb" target="_blank">LinkedIn</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Nanagoud H T. All rights reserved. | Software Engineer & Full-Stack Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="public/js/templatemo-glossy-touch.js"></script>
 </body>
 </html>
